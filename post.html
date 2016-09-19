@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Programming - Recent Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Simple Programming</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="books.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Installing your text editor, Ruby, and Exercise number 1</h1>
+                        <h2 class="subheading">Ruby for beginners</h2>
+                        <span class="meta">Posted by <a href="#">Ricardo Morales</a> on September, 18, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                  <p> In reading my blog I assume you want to learn how to code, and because of this I will be hard on you at times and I will lend a hand at other times. So lets start with getting your text editor and installing Ruby. </p>
+                    <p>Go to http://www.barebones.com/products/textwrangler/ to get your text editor ready. This is crucial, as soon you'll be writing code. Textwrangler comes pretty much configured how you would want it so don't worry too much about it. We will tweak it along the way, if needed. Put textwrangler on your Dock and put the terminal on your dock. If you don't know how to find your terminal, Google it. I want you to learn to think like a programmer. Run your terminal program. If you don't know how to do that, Google it or keep reading. Once you run it, it will look kind of empty, thats normal. In your terminal, run irb (Interavtive Ruby). Things are ran in the terminal by just typing their names and hitting enter. </p>
+
+                    <p>If irb is not running (irb is not recognized) Install it using the RVM Ruby Version Manager. Again, Google it. To get out of irb simply hit control D. Hopefully, you see the same thing as you did before you ran irb, if you don't. Google it.  </p>
+
+                    <p>Now in your terminal I want you to make a directory(file) and the way you do this is by typing this acroynm: mkdir and right after the file name. (example: mkdir rubyfile) and I want you to learn how to change directories and the way to do this is simply by putting this acroynm: cd (change directory) (example: cd rubyfolder) this tells your terminal to change directory into whatever folder you specified. (Pro tip: if you type cd and the first letter of wherever you're trying to go and press tab, terminal will autofill the rest for you)</p>
+
+                    <p>Use your editor to create a file in this directory(folder). You will make the file, “Save” or “Save As...”, and pick this directory. Go back to the terminal by just using your keyboard, you can do this by holding command and pressing tab at the same time. Back in the terminal see if you can list the directory to see your new file. If you don't know how to do this, Google it. (Hint: Google this term "ls terminal") </p>
+
+                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+
+                    <p>OSX: This is what I did, see if you can figure out the differences between what I did and what you have done:
+                      <br>Last login: Sun Sep 18 00:56:54 on ttys001
+                      ~ $ irb
+                      <br>ruby-2.3.1-p180 :001 >
+                      <br>ruby-2.3.1-p180 :002 > <b>^D</b>
+                      <br>Ricardos-MacBook-Pro-2:~ 🐐  $ <b>mkdir rubyfolder</b>
+                      <br>Ricardos-MacBook-Pro-2:~ 🐐  $ <b>cd rubyfolder</b>
+                      <br>Ricardos-MacBook-Pro-2:~ 🐐 $ <b>ls</b>
+                      <b># ... Use textwrangler here to edit test.txt....</b>
+                      <br>Ricardos-MacBook-Pro-2:~ 🐐 $ <b>ls</b>
+                      <br><b>test.txt</b>
+                      <br>Ricardos-MacBook-Pro-2:~ 🐐  $<b></p></b>
+
+                    <h2 class="section-heading">Exercises numbers 1 - 3</h2>
+                    <p>Exercise Number 1</p>
+
+                    <p>If you are not comfortable with your text editor go back and practice saving and editing your file until you are.</p>
+                    <p> To begin, the word "<b>puts</b>" tells the computer to print out whatever you put in the " " after the word puts.
+
+                    <br> puts<b> "Hello World!"</b>
+                    <br> puts<b> "Hello Again, World!"</b>
+                    <br> puts<b> "I enjoy typing this."</b>
+                    <br> puts<b> "This is fun."</b>
+                    <br> puts<b> 'Look! I'm Printing.'</b>
+                    <br> puts<b> "I'd much rather you print this."</b>
+                    <br> puts<b> 'I "said" print this.'</b>
+                    <br><b>Type this</b> don't copy and paste it,<b> type it</b> and save it in your computer under rubyex1.rb (The .rb tells the computer this is a ruby file)<br> Then run the ruby file on your terminal by typing </br><br>ruby rubyex1.rb</br>
+
+                    <p><h2> What your output should look like:  </p></h2>
+                    <p> Assuming you did this correctly this should be your output: </p>
+                    <br> Hello World!</b>
+                    <br> Hello Again, World!</b>
+                    <br> I enjoy typing this.</b>
+                    <br> This is fun.</b>
+                    <br> Look! I'm Printing.</b>
+                    <br> I'd much rather you print this.</b>
+                    <br> I "said" print this.</b>
+                    <p><br> If your terminal isn't printing this, you did something wrong. Go back and check what you did wrong, fix it and move on to exercise two.</p></br>
+
+
+                    <p>If you have an error it will look like this:
+                      <br>ruby ex1.rb</br>
+                      <br>ex1.rb:4: syntax error, unexpected tCONSTANT,</br> expecting $end</br>
+                      <br>puts "This is fun."</br>
+                                    ^</p>
+
+                    <p>Its imperative that you learn how to read these errors because you will see them over and over again so lets break this down line by line:
+                      <br>1. Here we ran our command in the terminal to run the ex1.rb script.</br>
+                      <br>2. Ruby then tells us that the file ex1.rb has an error on line 4.</br>
+                      <br>3. It then prints this line for us.</br>
+                      <br>4. Then it puts a ^ (caret) character to point at where the problem is.</br>
+                      <br>5. Finally, it prints out a “syntax error” and tells us something about what might be the error. Usually these are
+                      very cryptic, but if you copy that text into a search engine, you will find someone else who’s had that error and
+                      you can probably figure out how to fix it.</br>
+
+                      <p>Extra Credit:
+                      <br> Try writing additional lines in your code to see what prints</br> </p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+
+                        <li>
+                            <a href="www.github.com/ricardomorales22">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Simple Progamming 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
