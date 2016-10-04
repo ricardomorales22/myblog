@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
 <script src="//load.sumome.com/" data-sumo-site-id="af9053b388bd94a5b60752c97deffc65bdc8a006aaaca487ccb845a40f7ba4df" async="async"></script>
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,13 +69,13 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/background.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Exercise numbers 2 - 3</h1>
-                        <h2 class="subheading">Ruby for beginners</h2>
+                        <h1>Terminal</h1>
+                        <h2 class="subheading">Terminal for beginners</h2>
                         <span class="meta">Posted by <a href="#">Ricardo Morales</a></span>
                     </div>
                 </div>
@@ -89,95 +89,76 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+                  <p> This lesson will be on the foundations of Terminal. </p>
+                    <p>In this lesson you will learn the basics of Terminal, this will be essential to your career as a developer, as you will be using Terminal a lot.</p>
 
-                    <h2 class="section-heading">Exercises numbers 2 - 3</h2>
-                    <p>Exercise 2 Comments</p>
+                    <p>First, what is Terminal? Terminal is an interface in which you can type and execute text based on commands.</p>
+                    <img src="img/terminal.png">
+                    <p><b> Basics of Terminal </b></p>
+                    <p> Directories: <p>
 
-                    <p>What are comments? In programming comments are sentences that your complier doesn't read. In Ruby comments are made with a #. Everything after the # will not be read by the complier. Comments are used for programmers to understand your code better. Practice your commenting skills</p>
+                    <p><b> pwd </b> | Display the path of current working Directory</p>
+                    <br>
+                    <b> cd </b> | Change directory ( This can be used to find any folder/desktop/anything under any name. Example cd Desktop will take you into your Desktop.)
+                    </br>
+                    <br>
+                    <b> cd .. </b> | Navigate to parent directory ( Can also use this command to go back to last directory.)
+                    </br>
+                    <br>
+                    <b> ls </b> | List directory content( It list all the files in a specific sector of your computer.)
+                    </br>
+                    <br>
+                    <b> ls -la </b> | List detailed directory content including hidden files ( Most hidden files should not be erased or changed in any way, there is a reason they are hidden.)
+                    </br>
+                    <br>
+                    <b> mkdir < file name ></b> | Creates a new directory( Directory = File. Whatever you put between the < > will the name of your directory. )
+                    </br>
 
-                   <p><b><h2>Your program:</h2> <b/></p>
-                    <br> puts<b> "Hello World!"</b>
-                    <p># Comments could say anything</p>
-                    <p># Comments could tell other programmers what you're working on</p>
-                    <p>#Comments are neccessary</p>
-                     puts<b> "Print me please"</b></p>
-                    <p>#Comments are for internal use only</p>
-                  <br> Type it and save it under rubyex2.rb Then run the ruby file on your terminal by typing </br><br>ruby rubyex2.rb</br>
+                  <p> Files: </p>
 
-                    <p><h2> What your output should look like:  </p></h2>
-                    <p> Assuming you did this correctly this should be your output: </p>
-                    <br> Hello World!</b>
-                    <br> Print me please</b>
-                    <p><br> If your terminal isn't printing this, you did something wrong. Go back and check what you did wrong, fix it and move on to exercise three.</p></br>
+                    <b> rm < file name >  </b> | Delete < file name >
+                    </br>
+                    <br>
+                    <b> rm -r </b> | Delete Directory
+                    </br>
+                    <br>
+                    <b> rm -f < file > add -r to delete a directory</b>  | Force deletes file ( Before running this command make sure you know what you're deleting because this command has the potential to delete your whole system in seconds.)
+                    </br>
+                    <br>
+                    <b> mv < old-file > < new-file > </b> | Renames files
+                    </br>
+                    <br>
+                    <b> mv < file > < directory> </b> | Moves file to directory
+                    ( Can possibly overwrite an existing directory if not done properly.)
+                    </br>
+                    <br>
+                    <b> cp < file > < directory > </b> | Copys files to a new or existing directory.  ( Can possibly overwrite an existing directory if not done properly.)
+                    </br>
+                    <b> cp -r < directory 1 > < directory 2> </b> | Copy content in directory 1 to directory 2.
+                    </br>
+                    <br>
+                    <b> touch < file > </b> | Update file access and modification times and used to create a new file.
+                    </br>
 
-                  <h2 class="section-heading">Exercises number 3</h2>
-                    <p> Exercise 3 Math , Numbers, & Symbols </p>
-                    <p> This is the part most people fear, <b> numbers, numbers, numbers, </b> it really isn't that bad. I'll break it down so its easy for you. </p>
+                    <p> Search: </p>
+                    <b> find < dir > -n name "< file >" </b> | Finds all files named file inside the directory (folder). Use * to search for partial file names.
+                    </br>
+                    <br>
+                    <b> grep "< text >" < file ></b>
+                    | Output all occurrences of< text> inside
+                    < file > (add -i for case-insensitivity)
+                    </br>
+                    <b>  grep -rl "< text >" < dir ></b> | Search for all files containing < text > inside < dir >
+                    </br>
 
-                    <p> So, what math symbols are mostly used in programming? <br>These:<br>
-                    <br> + plus </br>
-                  <br> - minus </br>
-                <br> / slash </br>
-                <br> * asterick </br>
-                <br> % percentage </br>
-                <br> > greater-than </br>
-                <br> < less-than </br>
-                <br> >= greater-than-equal </br>
-                <br> <= less-than-equal </br>
-                </p>
+                    <p> Getting help from Terminal: </p>
 
-                <p><b><h2> Your program:</h2></b></p>
-                <br>1 puts "I will now count my roosters and hens:"</br>
-                <br>2</br>
-                <br>3 puts "Hens", 25 + 30 / 6</br>
-                <br>4 puts "Roosters", 100 - 25 * 3 % 4</br>
-                <br>5</br>
-                <br>6 puts "Now I will count the eggs:"</br>
-                <br>7
-                <br>8 puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6</br>
-                <br>9</br>
-                <br>10 puts "Is it true that 3 + 2 = 5?"</br>
-                <br>11</br>
-                <br>12 puts 3 + 2 < 5 - 7</br>
-                <br>13</br>
-                <br>14 puts "What is 3 + 2?", 3 + 2</br>
-                <br>15 puts "What is 5 - 7?", 5 - 7</br>
-                <br>16</br>
-                <br>17 puts "Oh, that's why it's false."</br>
-                <br>18</br>
-                <br>19 puts "How about some more."</br>
-                <br>20</br>
-                <br>21 puts "Is it greater?", 5 > -2</br>
-                <br>22 puts "Is it greater or equal?", 5 >= -2</br>
-                <br>23 puts "Is it less or equal?", 5 <= -2</br>
-                  <br> Type it and save it under rubyex3.rb Then run the ruby file on your terminal by typing </br><br>ruby rubyex3.rb</br>
-                 <p><h2> What your output should look like:  </p></h2>
-                  ruby ex3.rb
-                  <br>I will now count my chickens:
-                  <br>Hens
-                  <br>30
-                  <br>Roosters
-                  <br>97
-                  <br>Now I will count the eggs:
-                  <br>7
-                  <br>Is it true that 3 + 2 < 5 - 7?
-                  <br>false
-                  <br>What is 3 + 2?
-                  <br>5
-                  <br>What is 5 - 7?
-                  <br>-2
-                  <br>Oh, that's why it's false.
-                  <br>How about some more.
-                  <br>Is it greater?
-                  <br>true
-                  <br>Is it greater or equal?
-                  <br>true
-                  <br>Is it less or equal?
-                  <br>false
-                  <p><b> Extra Credit</b> </p>
-                  <p> Google the Ruby docs and find the .round method and figure out how you can get 4.9898 to 5. </p>
+                    <p>  On the command line, help is always at hand: you can either type
+                      <b> man < command >| or < command > --help </b> to receive detailed documentation about the command in question. </p>
 
+                    <p> Tab Key: </p>
 
+                    <p> Whenever entering paths and file names, the <b> TAB </b> key is very handy. It autocompletes what you’ve written, reducing typos and helping you type the file names faster.  </p>
 
                 </div>
             </div>
@@ -192,6 +173,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
+
                         <li>
                             <a href="www.github.com/ricardomorales22">
                                 <span class="fa-stack fa-lg">
